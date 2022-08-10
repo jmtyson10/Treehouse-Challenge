@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice CSS Length Units</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>CSS Length Units</h1>
+        <p>
+          Length units are CSS measurement values consisting of a number
+          followed by either an absolute or a relative unit. There should be no
+          space separating the number and the unit.
+        </p>
+        <p>
+          Lengths can be used in numerous CSS properties, such as
+          <code>width</code>, <code>height</code>, <code>margin</code>,
+          <code>padding</code>, <code>border-width</code>,
+          <code>font-size</code>, and <code>text-shadow</code>.
+        </p>
+
+        <section>
+          <h2>Absolute Length Units</h2>
+          <p>
+            Absolute length units are not relative to anything else, and are
+            always considered to be the same size. The most common absolute
+            length unit is the pixel. <code>1px</code> represents one dot of
+            illumination on a display screen.
+          </p>
+          <p>
+            While CSS accepts other length units such as <code>in</code> and
+            <code>cm</code>, you won’t typically use these unless you’re
+            creating a print style sheet using a CSS media query.
+          </p>
+        </section>
+
+        <section>
+          <h2>Relative Length Units</h2>
+          <p>
+            Relative length units are relative to something else. This could be
+            to the width of a parent element, the size of a parent element’s
+            font, or the size of the viewport.
+          </p>
+          <p>
+            When working with typography in CSS, the most common length units
+            are the <code>em</code> and the <code>rem</code>. While
+            <code>em</code> is relative to the font-size of its direct or
+            nearest parent, <code>rem</code> is only relative to the html (root)
+            font-size.
+          </p>
+          <p>
+            Viewport-percentage length units such as <code>vw</code> and
+            <code>vh</code> are relative to the size of the viewport.
+            <code>1vw</code> is equivalent to 1% of the width of the viewport.
+          </p>
+          <h3>Percentage Units</h3>
+          <p>
+            Although
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"
+              >technically not a length unit</a
+            >, percentage values can be used in many of the same properties that
+            accept length values.
+          </p>
+          <blockquote>
+            But what are they percentages <em>of</em>? It depends entirely on
+            the property! For the <code>width</code> and
+            <code>margin-left</code> properties, it’s a percentage of “the width
+            of the containing block”. For the <code>line-height property</code>,
+            it’s a percentage of “the font size of the element itself”. And so
+            on, with rather idiosyncratic semantics for each CSS property.
+            <cite
+              >James H. Fisher,
+              <a
+                href="https://jameshfisher.com/2019/12/29/what-are-css-percentages/"
+                >“What Are CSS Percentages?”</a
+              ></cite
+            >
+          </blockquote>
+          <p>
+            Note that although <code>padding-top</code>,
+            <code>padding-bottom</code>, <code>margin-top</code>, and
+            <code>margin-bottom</code> are vertical measurements, when using
+            percentages these measurements are based on the <em>width</em> of
+            the containing block.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
