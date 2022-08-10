@@ -1,25 +1,25 @@
+/* 1. set the root font size to 1.25 times its original size.
+        use a relative font measurement to accomplish this. 
+        ANSWER: font-size: 1.25em;*/
 html {
-  /* 1. set the root font size to 1.25 times its original size.
-        use a relative font measurement to accomplish this. */
+  font-size: 1.25em;
 }
+/* 2. set the line height to 1.5 times (or 150%) of the height of 
+        the body text. use a relative measurement to accomplish this. 
+        ANSWER: line-height: 1.5; are prefered based on child elements inheriting*/
 body {
   padding: 0;
   margin: 0;
   background-color: azure;
   color: darkslategrey;
   font-family: Georgia, "Times New Roman", Times, serif;
-
-  /* 2. set the line height to 1.5 times (or 150%) of the height of 
-        the body text. use a relative measurement to accomplish this. */
+  line-height: 1.5;
 }
-main {
-  background-color: white;
-
-  /* 3. for the main element
+/* 3. for the main element
   
         - set the width to 80% of its parent element
         - set a max width of 1000px using an absolute measurement
-        - set a min height of 100% of the height of the viewport
+        - set a min height of 100% of the height of the viewport ANSWER: min-height: 100vh 
         - use the margin property to center the main element
           (don’t add margin to the top or bottom.)
         - apply the following padding:
@@ -27,37 +27,48 @@ main {
           - 6% on the left and right
           - 9% on the bottom
         - apply a 3px powderblue border to the left and right sides */
+main {
+  background-color: white;
+  width: 80%;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 3% 6% 9% 6%;
+  border-left: 3px solid powderblue;
+  border-right: 3px solid powderblue;
 }
-section {
-  /* 4. apply margin to the bottom of the section element.
+/* 4. apply margin to the bottom of the section element.
         the margin should be 3 times the size of the root font size. */
+section {
+  margin-bottom: 3rem;
 }
-
+/* 5. set the line height to 1.1 times (or 110%) of the height of 
+        the body text. use a relative measurement to accomplish this. */
 h1,
 h2,
 h3 {
-  /* 5. set the line height to 1.1 times (or 110%) of the height of 
-        the body text. use a relative measurement to accomplish this. */
+  line-height: 1.1;
 }
+/* 6. set the h1 font size to 2.5 times the root font size. */
 h1 {
-  /* 6. set the h1 font size to 2.5 times the root font size. */
+  font-size: 2.5rem;
 }
+/* 7. set the h2 font size to twice the root font size. */
 h2 {
-  /* 7. set the h2 font size to twice the root font size. */
+  font-size: 2rem;
 }
-h3 {
-  /* 8. for the h3 element
+/* 8. for the h3 element
 
         -  set the font size to 1.5 times the root font size.
         -  set the top margin to twice the root font size. */
+h3 {
+  font-size: 1.5rem;
+  margin: 2rem;
 }
 code {
   font-family: "Courier New", Courier, monospace;
 }
-blockquote {
-  background-color: papayawhip;
-
-  /* 9. for the blockquote element 
+/* 9. for the blockquote element 
   
         - set the padding to 5% of the size of its parent element
         - set the top and bottom margin to twice the root font size
@@ -65,16 +76,22 @@ blockquote {
         - set the font size of the blockquote to 1.1 times the size
           of the parent element’s text. In other words, don’t refer
           to the root font size. */
+blockquote {
+  background-color: papayawhip;
+  padding: 5%;
+  margin: 2rem 1rem;
+  font-size: 1.1em;
 }
-cite {
-  display: block;
-  text-align: right;
-
-  /* 10. for the cite element
+/* 10. for the cite element
   
          - set the top margin to equal the size of the parent element’s text
          - set the font size of the blockquote to .75 times the size
            of the parent element’s text. 
             
            In both cases, don’t refer to the root font size */
+cite {
+  display: block;
+  text-align: right;
+  margin-top: 1em;
+  font-size: 0.75em;
 }
